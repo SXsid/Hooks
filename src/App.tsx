@@ -1,13 +1,19 @@
+import Callback from "./Callback"
+import Profile from "./Context/Profile"
 import Effect from "./Effect"
+import Memo from "./Memo"
 import USE_State from "./USE_State"
+import Home from "./Context/Home"
 
 
 function App() {
   return (
-    <div style={{display:"flex",alignItems:"center",color:"white",justifyContent:"center",height:"100vh"}}>
-      {/* <USE_State/> */}
-      <Effect/>
-    </div>
+    
+    
+      // <Memo/>
+      // <Callback/>
+      <Home/>
+   
   )
 }
 

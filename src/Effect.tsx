@@ -2,10 +2,12 @@ import { useEffect, useState } from "react"
 
 
 function Effect() {
-    const [initValue,setInit]=useState("")
-    const [finalValue,setFinal]=useState("")
+    const [initValue,setInit]=useState<string>("")
+    const [finalValue,setFinal]=useState<string>("")
     useEffect(()=>{
         const timer = setTimeout(()=>{
+            console.log(initValue);
+            
             setFinal(initValue)
             console.log(finalValue);
             
@@ -15,7 +17,7 @@ function Effect() {
             console.log("value changed");
             
         }
-    },[initValue])
+    },[initValue,finalValue])
 
   return (
     <div>
